@@ -40,7 +40,15 @@ function Home() {
   return (
     <div className="home centered-box">
       <h2>Welcome to MathMind</h2>
-      <p>Choose a category to start your 5-minute challenge.</p>
+      <p className="home-intro">A fun and fast-paced math challenge game for all ages! Pick your group and try to solve as many problems as you can in 5 minutes.</p>
+      <div className="home-buttons">
+        {categories.map((cat) => (
+          <Link key={cat} to={`/${cat}`} className="home-category-btn">
+            {cat.charAt(0).toUpperCase() + cat.slice(1)} Challenge
+          </Link>
+        ))}
+      </div>
+      <p className="home-footer">Sharpen your skills. Beat your high score. Have fun!</p>
     </div>
   );
 }
