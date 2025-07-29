@@ -184,3 +184,37 @@ button:disabled {
   font-size: 1rem;
   color: #444;
 }
+
+/* Home enhancements */
+.home-intro {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 20px 0;
+}
+
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.home-category-btn {
+  background-color: #004aad;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.home-category-btn:hover {
+  background-color: #00337f;
+}
+
+.home-footer {
+  font-size: 0.95rem;
+  color: #777;
+  margin-top: 15px;
+}
